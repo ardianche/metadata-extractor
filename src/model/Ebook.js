@@ -2,7 +2,6 @@ const Sequelize = require('sequelize');
 const Model = Sequelize.Model;
 
 const sequelize = require('../config/db');
-console.log('test: ');
 
 class Ebook extends Model {
     getAuthor(){

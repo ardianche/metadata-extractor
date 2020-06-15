@@ -11,6 +11,7 @@ const sequelize = new Sequelize('bibliu-rfd', 'root', 'password', {
     min:0,
     idle:1,
   },
+  logging:false,
   retry  : {
 		match: [
 			/ETIMEDOUT/,
@@ -30,7 +31,7 @@ const sequelize = new Sequelize('bibliu-rfd', 'root', 'password', {
 			/SequelizeConnectionTimedOutError/
 		],
 		max  : 5
-	}
+	},
 });
 
 module.exports =sequelize;

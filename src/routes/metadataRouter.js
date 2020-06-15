@@ -27,7 +27,6 @@ router.get('/title/:titleKeyword',async (req,res)=>{
 */
 
 router.get('/custom',async(req,res)=>{
-    console.log('req: ',req.body);
     res.send(await $ebook.customQuerying(req.body));
 })
 
